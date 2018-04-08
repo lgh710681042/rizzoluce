@@ -4,6 +4,8 @@
 
 //启动计时器，记录启动服务所花费的时间
 console.time('start WebServer need time');
+const hostname = '0.0.0.0';
+const port = 3000;
 
 //请求模块 
 var libHttp = require('http');  //HTTP协议模块 
@@ -107,9 +109,9 @@ webSvr.on("error", function (error) {
 });
 
 //开始侦听8124端口 
-webSvr.listen(3000, function () {
+webSvr.listen(port, hostname, function () {
     //向控制台输出服务启动的信息 
-    console.log('WebServer running at http://127.0.0.1:3000/');
+    console.log(`服务器运行在http://${hostname}:${port}`);
     
     //关闭服务启动计时器
     console.timeEnd('start WebServer need time');
