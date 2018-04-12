@@ -66,7 +66,7 @@ var funWebSvr = function (req, res) {
     }
     if (pathName.charAt(pathName.length - 1) == "/") {
         //如果访问目录 
-        pathName += "index.html"; //指定为默认网页 
+        pathName += "demmo.html"; //指定为默认网页 
     }
     
     //使用路径解析模块,组装实际文件路径 
