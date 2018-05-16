@@ -1,0 +1,261 @@
+<template>
+    <div class="h100">
+        <!--========== HEADER ==========-->
+        <header class="header navbar-fixed-top">
+            <!-- Navbar -->
+            <nav class="navbar" role="navigation">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="menu-container">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="toggle-icon"></span>
+                        </button>
+
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a class="logo-wrap" href="index.html">
+                                <img class="logo-img logo-img-main" src="../assets/img/logo.png" alt="Asentus Logo">
+                                <img class="logo-img logo-img-active" src="../assets/img/logo-dark.png" alt="Asentus Logo">
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-collapse">
+                        <div class="menu-container">
+                            <ul class="navbar-nav navbar-nav-right">
+                                <li class="nav-item"><router-link class="nav-item-child nav-item-hover" to="/rizzoluce">Home</router-link></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="company.html">Company</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="project.html">Project</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">Product</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="news.html">News</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="download.html">Download</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End Navbar Collapse -->
+                </div>
+            </nav>
+            <!-- Navbar -->
+        </header>
+        <!--========== END HEADER ==========-->
+
+        <!--========== PARALLAX ==========-->
+        <div class="parallax-window" data-parallax="scroll" :data-image-src="img">
+            <div class="parallax-content container">
+                <h1 class="carousel-title">COMPANY</h1>
+            </div>
+        </div>
+        <!-- <parallax>
+            <img src="../assets/img/1920x1080/07.jpg" alt="very cool bg">
+        </parallax> -->
+        <!--========== PARALLAX ==========-->
+
+        <!--========== PAGE LAYOUT ==========-->
+        <!-- Features -->
+        <div class="section-seperator">
+            <div class="content-lg container">
+                <div class="row">
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
+                            <h3>Lighting that works</h3>
+                            <p>Lighting is the language that makes architectural spaces function with beauty and order. We are committed to honesty, durability, responsibility, and adaptability. Fusing design and engineering makes a product suitable, providing order and comfort to interior and exterior architectural projects with exacting demands, such as retail, offices, hospitality, and residential developments. It is the beauty of a world that works.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
+                            <h3>Spaces that work</h3>
+                            <p>We believe that, although light is born in each fixture, it lives in the space it illuminates and in the person working or living there. Whether creating a single luminaire or a complex project with hundreds of luminaires, we always build with the space in mind. That is our mission. It is our conviction expressed in each project and each meeting, with a team of experts working hard from planning through to installation. A comprehensive approach with a single objective: let the results speak for themselves in a lasting way and in any place.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                            <h3>Coordinated efforts that work</h3>
+                            <p>We believe that to bring a space to life requires the efforts of many companies and professionals. Our efforts are aimed at providing realistic and efficient solutions, customized to the project's specific challenges. We work together with architects, lighting designers, engineers, and interior designers to make your project a reality, anticipating your needs to bring lasting light.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+        </div>
+        <!-- End Features -->
+
+        <!-- About -->
+        <div class="content-lg container">
+            <div class="row margin-b-50">
+                <div class="col-sm-6 sm-margin-b-50">
+                    <div class="margin-b-30">
+                        <h2>About</h2>
+                        <p>We,Rizzoluce, we design, we produce and make your technical lighting projects possible. For more than 14 years, Rizzoluce has maintained its essential commitment: to bring to life functional and customized solutions for our customers' lighting challenges, adapted to any architectural project around the world.</p>
+                    </div>
+                    <p>
+                        Lighting is the language that makes architectural spaces function with beauty and order. We are committed to honesty, durability, responsibility, and adaptability. Fusing design and engineering makes a product suitable, providing order and comfort to interior and exterior architectural projects with exacting demands, such as retail, offices, hospitality, and residential developments. It is the beauty of a world that works.
+                    </p>
+                </div>
+                <div class="col-sm-5 col-sm-offset-1 wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                    <img class="img-responsive" src="../assets/img/company/company01.jpg" alt="Our Office">
+                </div>
+            </div>
+            <!--// end row -->
+
+        </div>
+        <!-- End About -->
+
+        <!-- About -->
+        <div class="container">
+            <div class="row" >
+                <div class="col-sm-5 wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                    <img class="img-responsive" src="../assets/img/company/company02.jpg" alt="Our Office">
+                </div>
+                <div class="col-sm-6 sm-margin-b-50 col-sm-offset-1">
+                    <div class="margin-b-30">
+                        <h2>Design</h2>
+                        <p>From its very beginning Rizzoluce® has been driven by design and technology. Glancing at the product range, one can immediately tell that innovation is the central impulse of development. Based on a passion for lighting and design, extensive trend and market research, and in-depth knowledge of product development, Rizzoluce’s Italian based design team over the years succeeded in creating a range of timeless, elegant and often industry changing lighting fixtures.</p>
+                    </div>
+                </div>
+            </div>
+            <!--// end row -->
+
+        </div>
+        <!-- End About -->
+
+        <!-- R&D and Quality -->
+        <div class="content-lg container">
+            <div class="row margin-b-50">
+                <div class="col-sm-6 sm-margin-b-50">
+                    <div class="margin-b-30">
+                        <h2>R&D and Quality</h2>
+                        <p>An important feature in Rizzoluce’s creative process is the use of state of the art development techniques. The intensive use of 3D printing, early stage FMEA (Failure Mode and Effect analysis), goniophotometry and in-house supervised manufacturer testing (SMT) result in a fast, efficient and first time right development process. As such, an essential attribute in the company’s short idea-to-market philosophy.</p>
+                    </div>
+                    <p>
+                        Throughout the entire production process Delta Light distinguishes itself by handling the strictest quality parameters, to ensure products and services are designed and produced to exceed customer requirements. Every step in the production process has a routine quality procedure, covering both product quality and testing. As such, each product that leaves Delta Light, has been inspected and tested thoroughly, resulting in minimal returns and maximum efficiency.
+                    </p>
+                </div>
+                <div class="col-sm-5 col-sm-offset-1 wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                    <img class="img-responsive" src="../assets/img/company/company03.jpg" alt="Our Office">
+                </div>
+            </div>
+            <!--// end row -->
+
+        </div>
+        <!-- End R&D and Quality -->
+
+        <!-- Technology&Optical -->
+        <div class="container">
+            <div class="row" >
+                <div class="col-sm-5 wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                    <img class="img-responsive" src="../assets/img/company/company04.jpg" alt="Our Office">
+                </div>
+                <div class="col-sm-6 sm-margin-b-50 col-sm-offset-1">
+                    <div class="margin-b-30">
+                        <h2>Technology&Optical</h2>
+                        <p>The breakthrough of LED technology currently being experienced is probably the biggest development in lighting technology for decades. Rizzoluce® plays a leading role in implementing this new technology, designing and manufacturing its own LED lamps, developing innovative LED products and tailor-made solutions, enabling designers and users alike to optimally exploit the previously unimagined possibilities in lighting.</p>
+                    </div>
+                    <p>
+                        The continued advancement in LED technology provides new opportunities for energy-efficient lighting. Rizzoluce® plays a leading role in implementing this new technology, designing and manufacturing its own LED lamps, developing innovative LED products and tailor-made solutions. The true measure of cost goes beyond just the initial cost of purchase, but also includes intelligent lighting control, lifetime, maintainability and operational costs. Combining extensive product knowledge with a vast range of energy efficient product solutions and industry specific experience, Rizzoluce® is able to guide you through a green, cost-effective and sustainable selection process -without compromising the quality of light.
+                    </p>
+                </div>
+            </div>
+            <!--// end row -->
+
+        </div>
+        <!-- End Technology&Optical -->
+
+        <!-- R&D and Quality -->
+        <div class="content-lg container">
+            <div class="row margin-b-50">
+                <div class="col-sm-6 sm-margin-b-50">
+                    <div class="margin-b-30">
+                        <h2>Production</h2>
+                        <p>Over the years the Rizzoluce  collection has grown to more than 330 product references, ranging from made-to-measure profiles to a wide range of recessed and surface mounted spots, eye-catching lighting objects to design savvy wall fixtures and extensive outdoor lighting solutions. The entire development and production process of this range is managed by Rizzoluce HQ in-house.</p>
+                    </div>
+                    <p>
+                        From design to engineering and prototyping, all the way to production, packaging and stocking… all is handled at the Rizzoluce headquarters in Italy. The innovation credo of the company is taken beyond product design and onto the production floor. New warehouse management systems and automatisation processes have been implemented in recent years to upgrade efficiency and quality, enabling the company to handle industry leading quality parameters, maximum flexibility and short delivery terms.
+                    </p>
+                </div>
+                <div class="col-sm-5 col-sm-offset-1 wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                    <img class="img-responsive" src="../assets/img/company/company05.jpg" alt="Our Office">
+                </div>
+            </div>
+            <!--// end row -->
+
+        </div>
+        <!-- End R&D and Quality -->
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer">
+            <!-- Links -->
+            <div class="footer-seperator">
+                <div class="content-lg container">
+                    <div class="row">
+                        <div class="col-sm-2 sm-margin-b-50">
+                            <!-- List -->
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Home</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">About</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Products</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Pricing</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Clients</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Careers</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Contact</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Terms</a></li>
+                            </ul>
+                            <!-- End List -->
+                        </div>
+                        <div class="col-sm-4 sm-margin-b-30">
+                            <!-- List -->
+                            <ul class="list-unstyled footer-list">
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Twitter</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Facebook</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">Instagram</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="#">YouTube</a></li>
+                            </ul>
+                            <!-- End List -->
+                        </div>
+                        <div class="col-sm-5 sm-margin-b-30">
+                            <h2 class="color-white">Send Us A Note</h2>
+                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Name" required>
+                            <input type="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
+                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Phone" required>
+                            <textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Message" required></textarea>
+                            <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
+                        </div>
+                    </div>
+                    <!--// end row -->
+                </div>
+            </div>
+            <!-- End Links -->
+
+            <!-- Copyright -->
+            <div class="content container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <img class="footer-logo" src="../assets/img/logo.png" alt="Asentus Logo">
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <p class="margin-b-0">© Copyright 2018 Rizzoluce</p>
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+            <!-- End Copyright -->
+        </footer>
+        <!--========== END FOOTER ==========-->
+
+        <!-- Back To Top -->
+        <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+    </div>
+</template>
+<style src="../assets/css/layout.min.css"></style>
+<script>
+export default {
+		data(){
+            return {
+                img: require('../assets/img/1920x1080/07.jpg')
+            }
+        }
+    }
+</script>
