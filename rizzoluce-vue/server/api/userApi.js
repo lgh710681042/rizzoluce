@@ -20,6 +20,11 @@ var jsonWrite = function(res, ret) {
 };
 
 //Vue_blog接口
+//编写执行函数
+router.get('/', function(req, res, next) {
+    //使用绝对定位打开views下面的html文件
+    console.log('test');
+});
 
 // 增加用户接口
 router.use('/addUser', (req, res) => {

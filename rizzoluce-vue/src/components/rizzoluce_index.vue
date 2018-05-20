@@ -28,16 +28,11 @@
                             <ul class="navbar-nav navbar-nav-right">
                                 <li class="nav-item"><router-link class="nav-item-child nav-item-hover active" to="/rizzoluce">Home</router-link></li>
                                 <li class="nav-item"><router-link class="nav-item-child nav-item-hover" to="/company">Company</router-link></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="project.html">Project</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">Product</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="news.html">News</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="download.html">Download</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.html">Contact</a></li>
-
-                                <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="pricing.html">Pricing</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">About</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.html">FAQ</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.html">Contact22</a></li> -->
+                                <li class="nav-item"><router-link class="nav-item-child nav-item-hover" to="/project">Project</router-link></li>
+                                <li class="nav-item"><router-link class="nav-item-child nav-item-hover" to="/products">Product</router-link></li>
+                                <li class="nav-item"><router-link class="nav-item-child nav-item-hover" to="/news">News</router-link></li>
+                                <li class="nav-item"><router-link class="nav-item-child nav-item-hover" to="/download">Download</router-link></li>
+                                <li class="nav-item"><router-link class="nav-item-child nav-item-hover" to="/contact">Contact</router-link></li>
                             </ul>
                         </div>
                     </div>
@@ -599,79 +594,104 @@
 </template>
 <style src="../assets/css/layout.min.css"></style>
 <style src="../assets/css/swiper.min.css"></style>
+<style src="../assets/css/simple-line-icons.min.css"></style>
 <script type="text/javascript">
 export default {
     mounted() {
         var swiper = new Swiper('.swiper-clients', {
-        slidesPerView: 5,
-        spaceBetween: 50,
-        loop: true,
-        breakpoints: {
-            1024: {
-                slidesPerView: 4,
-                spaceBetween: 50
-            },
-            992: {
-                slidesPerView: 3,
-                spaceBetween: 40
-            },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 30
-            },
-            600: {
-                slidesPerView: 2,
-                spaceBetween: 30
-            },
-            480: {
-                slidesPerView: 1,
-                spaceBetween: 0
+            slidesPerView: 5,
+            spaceBetween: 50,
+            loop: true,
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                600: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                }
             }
-        }
-    });
-    // Swiper Clients
-    var swiper = new Swiper('.swiper-testimonials', {
-        speed: 1000,
-        autoplay: 10000,
-        slidesPerView: 1,
-        loop: true,
-    });
+        });
+        // Swiper Clients
+        var swiper = new Swiper('.swiper-testimonials', {
+            speed: 1000,
+            autoplay: 10000,
+            slidesPerView: 1,
+            loop: true,
+        });
 
-    this.handleMasonryGrid();
-
+        this.handleMasonryGrid();
+        this.handleCarousel();
+        //跳转到页面顶部
+        scrollTo(0,0);
     },
     methods:{
         handleMasonryGrid() {
-        var $container = $('.masonry-grid');
+            var $container = $('.masonry-grid');
 
-        // initialize Masonry after all images have loaded
-        $container.imagesLoaded( function() {
-            $container.masonry({
-                itemSelector: '.masonry-grid-item', // use a separate class for itemSelector, other than .col-
-                columnWidth: '.masonry-grid-sizer',
-                percentPosition: true
+            // initialize Masonry after all images have loaded
+            $container.imagesLoaded( function() {
+                $container.masonry({
+                    itemSelector: '.masonry-grid-item', // use a separate class for itemSelector, other than .col-
+                    columnWidth: '.masonry-grid-sizer',
+                    percentPosition: true
+                });
             });
-        });
 
-        $.fn.masonryImagesReveal = function( $items ) {
-		  	var msnry = this.data('masonry');
-		  	var itemSelector = msnry.options.itemSelector;
-		  	// hide by default
-		  	$items.hide();
-		  	// append to container
-		  	this.append( $items );
-		  	$items.imagesLoaded().progress( function( imgLoad, image ) {
-			    // get item
-			    // image is imagesLoaded class, not <img>, <img> is image.img
-			    var $item = $( image.img ).parents( itemSelector );
-			    // un-hide item
-			    $item.show();
-			    // masonry does its thing
-			    msnry.appended( $item );
-		  	});
-		  
-		  	return this;
-		};
+            $.fn.masonryImagesReveal = function( $items ) {
+                var msnry = this.data('masonry');
+                var itemSelector = msnry.options.itemSelector;
+                // hide by default
+                $items.hide();
+                // append to container
+                this.append( $items );
+                $items.imagesLoaded().progress( function( imgLoad, image ) {
+                    // get item
+                    // image is imagesLoaded class, not <img>, <img> is image.img
+                    var $item = $( image.img ).parents( itemSelector );
+                    // un-hide item
+                    $item.show();
+                    // masonry does its thing
+                    msnry.appended( $item );
+                });
+            
+                return this;
+            };
+        },
+        handleCarousel() {
+            var $item = $('.carousel .item'); 
+            var $wHeight = $(window).height();
+            $item.eq(0).addClass('active');
+            $item.height($wHeight); 
+            $item.addClass('full-screen');
+
+            $('.carousel img').each(function() {
+                var $src = $(this).attr('src');
+                var $color = $(this).attr('data-color');
+                $(this).parent().css({
+                    'background-image' : 'url(' + $src + ')',
+                    'background-color' : $color
+                });
+                $(this).remove();
+            });
+
+            $(window).on('resize', function (){
+                $wHeight = $(window).height();
+                $item.height($wHeight);
+            });
         }
     }
 }

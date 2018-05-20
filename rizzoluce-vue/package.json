@@ -15,10 +15,12 @@
   "dependencies": {
     "axios": "^0.18.0",
     "jquery": "^2.2.3",
+    "mysql": "^2.15.0",
     "vue": "^2.1.0",
     "vue-resource": "^1.2.0",
     "vue-router": "^2.2.0",
-    "vuex": "^2.1.2"
+    "vuex": "^2.1.2",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",

@@ -27,12 +27,12 @@
                         <div class="menu-container">
                             <ul class="navbar-nav navbar-nav-right">
                                 <li class="nav-item"><router-link class="nav-item-child nav-item-hover" to="/rizzoluce">Home</router-link></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="company.html">Company</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="project.html">Project</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">Product</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="news.html">News</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="download.html">Download</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.html">Contact</a></li>
+                                <li class="nav-item"><router-link class="nav-item-child nav-item-hover active" to="/company">Company</router-link></li>
+                                <li class="nav-item"><router-link class="nav-item-child nav-item-hover" to="/project">Project</router-link></li>
+                                <li class="nav-item"><router-link class="nav-item-child nav-item-hover" to="/products">Product</router-link></li>
+                                <li class="nav-item"><router-link class="nav-item-child nav-item-hover" to="/news">News</router-link></li>
+                                <li class="nav-item"><router-link class="nav-item-child nav-item-hover" to="/download">Download</router-link></li>
+                                <li class="nav-item"><router-link class="nav-item-child nav-item-hover" to="/contact">Contact</router-link></li>
                             </ul>
                         </div>
                     </div>
@@ -250,11 +250,44 @@
     </div>
 </template>
 <style src="../assets/css/layout.min.css"></style>
+<style src="../assets/css/animate.css"></style>
 <script>
+import WOW from 'wow.js'
 export default {
 		data(){
             return {
                 img: require('../assets/img/1920x1080/07.jpg')
+            }
+        },
+         mounted(){
+            $('.parallax-window').parallax({
+              calibrateX: false,
+              calibrateY: true,
+              invertX: false,
+              invertY: true,
+              limitX: false,
+              limitY: 10,
+              scalarX: 2,
+              scalarY: 8,
+              frictionX: 0.2,
+              frictionY: 0.8
+            });
+            console.log(this.img);
+
+            //wow
+            this.handleWow();
+            //跳转到页面顶部
+            scrollTo(0,0);
+        },
+        methods:{
+            handleWow() {
+                var wow = new WOW({
+                    boxClass:     'wow',      // animated element css class (default is wow)
+                    offset:       0,          // distance to the element when triggering the animation (default is 0)
+                    mobile:       false,      // trigger animations on mobile devices (true is default)
+                    tablet:       false       // trigger animations on tablet devices (true is default)
+                });
+                wow.init();
             }
         }
     }

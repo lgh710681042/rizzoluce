@@ -9,8 +9,14 @@ import m_show from './components/message_show.vue'
 import d_show from './components/diary_show.vue'
 import about from './components/about.vue'
 import common_head from './components/common_head.vue'
-import rizzoluce_index from './components/rizzoluce_index.vue'
-import company from './components/company'
+import rizzoluce from './components/rizzoluce_index.vue'
+import company from './components/company.vue'
+import project from './components/project.vue'
+import products from './components/products.vue'
+import product from './components/product.vue'
+import news from './components/news.vue'
+import download from './components/download.vue'
+import contact from './components/contact.vue'
 import $ from 'jquery'
 import './assets/js/bootstrap.min.js'
 import './assets/js/swiper.jquery.min.js'
@@ -37,7 +43,7 @@ Vue.use(VueRouter)
 // 路由
 const routes = [{
         path: '/',
-        component: index
+        component: rizzoluce
     },
     {
         path: '/about',
@@ -69,11 +75,35 @@ const routes = [{
     },
     {
         path: '/rizzoluce',
-        component: rizzoluce_index
+        component: rizzoluce
     },
     {
         path: '/company',
         component: company
+    },
+    {
+        path: '/project',
+        component: project
+    },
+    {
+        path: '/products',
+        component: products
+    },
+    {
+        path: '/product',
+        component: product
+    },
+    {
+        path: '/download',
+        component: download
+    },
+    {
+        path: '/news',
+        component: news
+    },
+    {
+        path: '/contact',
+        component: contact
     }
 ]
 const router = new VueRouter({
