@@ -66,9 +66,11 @@
                 <div class="col-sm-3 sm-margin-b-50">
                     <div class="margin-b-20 product-style">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <a href="product.html">
-                            <img class="img-responsive" src="../assets/img/970x647/downlights.png" alt="Our Exceptional Solutions Image">
-                        </a>
+                        <!-- <a href="product.html"> -->
+                        <router-link to="/product?product_id=1">
+                            <img class="img-responsive" src="http://localhost:3000/img/970x647/downlights.png" alt="Our Exceptional Solutions Image">
+                        </router-link>
+                        <!-- </a> -->
                         </div>
                     </div>
                     <h3><a href="product.html">Downlights</a></h3>

@@ -15,6 +15,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "jquery": "^2.2.3",
+    "mongodb": "^3.1.0-beta4",
     "mysql": "^2.15.0",
     "vue": "^2.1.0",
     "vue-resource": "^1.2.0",

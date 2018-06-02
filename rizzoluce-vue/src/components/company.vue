@@ -108,7 +108,7 @@
         <div class="container">
             <div class="row" >
                 <div class="col-sm-5 wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                    <img class="img-responsive" src="../assets/img/company/company02.jpg" alt="Our Office">
+                    <img class="img-responsive" src="../assets/img/company/company02.png" alt="Our Office">
                 </div>
                 <div class="col-sm-6 sm-margin-b-50 col-sm-offset-1">
                     <div class="margin-b-30">
@@ -131,7 +131,7 @@
                         <p>An important feature in Rizzoluce’s creative process is the use of state of the art development techniques. The intensive use of 3D printing, early stage FMEA (Failure Mode and Effect analysis), goniophotometry and in-house supervised manufacturer testing (SMT) result in a fast, efficient and first time right development process. As such, an essential attribute in the company’s short idea-to-market philosophy.</p>
                     </div>
                     <p>
-                        Throughout the entire production process Delta Light distinguishes itself by handling the strictest quality parameters, to ensure products and services are designed and produced to exceed customer requirements. Every step in the production process has a routine quality procedure, covering both product quality and testing. As such, each product that leaves Delta Light, has been inspected and tested thoroughly, resulting in minimal returns and maximum efficiency.
+                        Throughout the entire production process Rizzoluce distinguishes itself by handling the strictest quality parameters, to ensure products and services are designed and produced to exceed customer requirements. Every step in the production process has a routine quality procedure, covering both product quality and testing. As such, each product that leaves Rizzoluce, has been inspected and tested thoroughly, resulting in minimal returns and maximum efficiency.
                     </p>
                 </div>
                 <div class="col-sm-5 col-sm-offset-1 wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
