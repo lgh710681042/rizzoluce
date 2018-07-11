@@ -1,6 +1,6 @@
-var MongoClient = require('mongodb').MongoClient;
 var express = require('express');
 var router = express.Router();
+const mongodb = require('../mongodb')
 
 //连接字符串
 var DB_CONN_STR = 'mongodb://localhost:27017/rizzoluce';
@@ -18,15 +18,9 @@ var jsonWrite = function(res, ret) {
 
 // 增加用户接口
 router.use('/productInfo', (req, res) => {
-    
-    // var sql = $sql.user.add;
-    // var params = req.body;
-    // console.log(params);
-    // pool.query(sql, [params.username, params.pwd], function(error, results, fields) {
-    //     if (error) throw error;
-    //     if (results) {
-    //         console.log(results)
-    //         jsonWrite(res, results);
-    //     }
-    // })
+    mongodb.Products.find().then((productList) => {
+        //res.send(productList)
+        jsonWrite(res, productList);
+    })
 });
+module.exports = router;

@@ -63,167 +63,16 @@
 
             <div class="row margin-b-50">
                 <!-- Our Exceptional Solutions -->
-                <div class="col-sm-3 sm-margin-b-50">
+                <div class="col-sm-3 margin-b-50" v-for="item in products_list">
                     <div class="margin-b-20 product-style">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <!-- <a href="product.html"> -->
-                        <router-link to="/product?product_id=1">
-                            <img class="img-responsive" src="http://localhost:3000/img/970x647/downlights.png" alt="Our Exceptional Solutions Image">
-                        </router-link>
-                        <!-- </a> -->
-                        </div>
+                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                             <a href="javascript:;" @click="goDetail(item)">
+                                 <img class="img-responsive" :src="host+item.image_url" alt="Our Exceptional Solutions Image">
+                             </a>
+                         </div>
                     </div>
-                    <h3><a href="product.html">Downlights</a></h3>
+                    <h3><a href="product.html">{{item.product_name}}</a></h3>
                 </div>
-                <!-- End Our Exceptional Solutions -->
-
-                <!-- Our Exceptional Solutions -->
-                <div class="col-sm-3 sm-margin-b-50">
-                    <div class="margin-b-20 product-style">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <a href="#">
-                            <img class="img-responsive" src="../assets/img/970x647/trackspotlights.png" alt="Our Exceptional Solutions Image">
-                        </a>
-                        </div>
-                    </div>
-                    <h4><a href="#">Track spotlights</a></h4>
-                </div>
-                <!-- End Our Exceptional Solutions -->
-
-                <!-- Our Exceptional Solutions -->
-                <div class="col-sm-3 sm-margin-b-50">
-                    <div class="margin-b-20 product-style">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <a href="#">
-                            <img class="img-responsive" src="../assets/img/970x647/pendants.png" alt="Our Exceptional Solutions Image">
-                        </a>
-                        </div>
-                    </div>
-                    <h4><a href="#">Pendants</a></h4>
-                </div>
-
-                <!-- Our Exceptional Solutions -->
-                <div class="col-sm-3 sm-margin-b-50">
-                    <div class="margin-b-20 product-style">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <a href="#">
-                            <img class="img-responsive" src="../assets/img/970x647/linearandstrips.png" alt="Our Exceptional Solutions Image">
-                        </a>
-                        </div>
-                    </div>
-                    <h4><a href="#">Linear and strips</a></h4>
-                </div>
-                <!-- End Our Exceptional Solutions -->
-            </div>
-            <!--// end row -->
-
-            <div class="row margin-b-50">
-                <!-- Our Exceptional Solutions -->
-                <div class="col-sm-3 sm-margin-b-50">
-                    <div class="margin-b-20 product-style">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <a href="#">
-                            <img class="img-responsive" src="../assets/img/970x647/wallluminaires.png" alt="Our Exceptional Solutions Image">
-                        </a>
-                        </div>
-                    </div>
-                    <h4><a href="#">Wall luminaires</a></h4>
-                </div>
-                <!-- End Our Exceptional Solutions -->
-
-                <!-- Our Exceptional Solutions -->
-                <div class="col-sm-3 sm-margin-b-50">
-                    <div class="margin-b-20 product-style">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <a href="#">
-                            <img class="img-responsive" src="../assets/img/970x647/modularsystem.png" alt="Our Exceptional Solutions Image">
-                        </a>
-                        </div>
-                    </div>
-                    <h4><a href="#">Modular system</a></h4>
-                </div>
-                <!-- End Our Exceptional Solutions -->
-
-                <!-- Our Exceptional Solutions -->
-                <div class="col-sm-3 sm-margin-b-50">
-                    <div class="margin-b-20 product-style">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <a href="#">
-                            <img class="img-responsive" src="../assets/img/970x647/ceilingluminaires.png" alt="Our Exceptional Solutions Image">
-                        </a>
-                        </div>
-                    </div>
-                    <h4><a href="#">Ceiling luminaires</a></h4>
-                </div>
-                <!-- End Our Exceptional Solutions -->
-
-                <!-- Our Exceptional Solutions -->
-                <div class="col-sm-3 sm-margin-b-50">
-                    <div class="margin-b-20 product-style">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <a href="#">
-                            <img class="img-responsive" src="../assets/img/970x647/generallighting.png" alt="Our Exceptional Solutions Image">
-                        </a>
-                        </div>
-                    </div>
-                    <h4><a href="#">General lighting</a></h4>
-                </div>
-                <!-- End Our Exceptional Solutions -->
-            </div>
-            <!--// end row -->
-
-            <div class="row margin-b-50">
-                <!-- Our Exceptional Solutions -->
-                <div class="col-sm-3 sm-margin-b-50">
-                    <div class="margin-b-20 product-style">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <a href="#">
-                            <img class="img-responsive" src="../assets/img/970x647/generallighting.png" alt="Our Exceptional Solutions Image">
-                        </a>
-                        </div>
-                    </div>
-                    <h4><a href="#">General lighting</a></h4>
-                </div>
-                <!-- End Our Exceptional Solutions -->
-
-                <!-- Our Exceptional Solutions -->
-                <div class="col-sm-3 sm-margin-b-50">
-                    <div class="margin-b-20 product-style">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <a href="#">
-                            <img class="img-responsive" src="../assets/img/970x647/generallighting.png" alt="Our Exceptional Solutions Image">
-                        </a>
-                        </div>
-                    </div>
-                    <h4><a href="#">General lighting</a></h4>
-                </div>
-                <!-- End Our Exceptional Solutions -->
-
-                <!-- Our Exceptional Solutions -->
-                <div class="col-sm-3 sm-margin-b-50">
-                    <div class="margin-b-20 product-style">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <a href="#">
-                            <img class="img-responsive" src="../assets/img/970x647/generallighting.png" alt="Our Exceptional Solutions Image">
-                        </a>
-                        </div>
-                    </div>
-                    <h4><a href="#">General lighting</a></h4>
-                </div>
-                <!-- End Our Exceptional Solutions -->
-
-                <!-- Our Exceptional Solutions -->
-                <div class="col-sm-3 sm-margin-b-50">
-                    <div class="margin-b-20 product-style">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <a href="#">
-                            <img class="img-responsive" src="../assets/img/970x647/generallighting.png" alt="Our Exceptional Solutions Image">
-                        </a>
-                        </div>
-                    </div>
-                    <h4><a href="#">General lighting</a></h4>
-                </div>
-                <!-- End Our Exceptional Solutions -->
             </div>
             <!--// end row -->
         </div>
@@ -542,7 +391,7 @@
             <div class="content container">
                 <div class="row">
                     <div class="col-xs-6">
-                        <img class="footer-logo" src="img/logo.png" alt="Asentus Logo">
+                        <img class="footer-logo" src="../assets/img/logo.png" alt="Asentus Logo">
                     </div>
                     <div class="col-xs-6 text-right">
                         <p class="margin-b-0">© Copyright 2018 Rizzoluce</p>
@@ -562,10 +411,14 @@
 <style src="../assets/css/common-style.css"></style>
 <script>
 import WOW from 'wow.js'
+import axios from 'axios'
 export default {
     data(){
         return {
-            img: require('../assets/img/product/product01.jpg')
+            img: require('../assets/img/product/product01.jpg'),
+            products_list:[],
+            host:"http://localhost:3000/",
+            test:"img/970x647/downlights.png"
         }
     },
     mounted() {
@@ -586,6 +439,11 @@ export default {
 
         //跳转到页面顶部
         scrollTo(0,0);
+        //获取产品列表
+        this.getProductList();
+    },
+    created(){
+        
     },
     methods:{
         handleWow() {
@@ -596,6 +454,25 @@ export default {
                 tablet:       false       // trigger animations on tablet devices (true is default)
             });
             wow.init();
+        },
+        goDetail(item) {
+        	this.$router.push({
+                  path:`/product`,
+                  query:{product_id:item.product_id}
+              });
+        },
+        getProductList(){
+            axios.get('api/product/productInfo').then((res) => {
+                this.products_list = res.data; 
+                console.log(this.products_list);
+                console.log(res.data);
+                if(res.status === '1') {
+                    this.products_list = res.result;
+                    console.log(res.data);
+                }else{
+                    console.log(res.msg);
+                }
+            });
         }
     }
 }

@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 // 后端api路由
 app.use('/api/user', userApi);
-// app.use('/api/product', productApi);
+app.use('/api/product', productApi);
 
 
 // 监听端口

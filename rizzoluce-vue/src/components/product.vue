@@ -44,7 +44,7 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PARALLAX ==========-->
-        <div class="parallax-window" data-parallax="scroll" data-image-src="../assets/img/product/product01.jpg">
+        <div class="parallax-window" data-parallax="scroll" :data-image-src="img">
             <div class="parallax-content container">
                 <h1 class="carousel-title">Products</h1>
             </div>
@@ -355,7 +355,7 @@ V0 self-extinguishing clear polycarbonate screen.</li>
             <div class="content container">
                 <div class="row">
                     <div class="col-xs-6">
-                        <img class="footer-logo" src="img/logo.png" alt="Asentus Logo">
+                        <img class="footer-logo" src="../assets/img/logo.png" alt="Asentus Logo">
                     </div>
                     <div class="col-xs-6 text-right">
                         <p class="margin-b-0">© Copyright 2018 Rizzoluce</p>
