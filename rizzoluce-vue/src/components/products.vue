@@ -417,7 +417,7 @@ export default {
         return {
             img: require('../assets/img/product/product01.jpg'),
             products_list:[],
-            host:"http://localhost:3000/",
+            host:"http://47.98.34.214:3000/",
             test:"img/970x647/downlights.png"
         }
     },

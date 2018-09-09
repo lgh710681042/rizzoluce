@@ -45,8 +45,17 @@ const ProductsSchema = new Schema(
     {VersionKet: false}
 )
 
+const SuperChickenUsersSchema = new Schema(
+    {
+        imei:String,
+        date:String
+    },
+    {VersionKet: false}
+)
+
 const Models = {
-    Products : mongoose.model('products', ProductsSchema)
+    Products : mongoose.model('products', ProductsSchema),
+    SuperChickenUsers : mongoose.model('super_chicken_users', SuperChickenUsersSchema)
 }
 
 mongoose.connect('mongodb://localhost:27017/rizzoluce')

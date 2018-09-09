@@ -1,5 +1,6 @@
 const userApi = require('./api/userApi');
 const productApi = require('./api/productApi')
+const superchickenApi = require('./api/superchickenApi')
 const fs = require('fs');
 const path = require('path');
 const bodyParser = require('body-parser');
@@ -12,6 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // 后端api路由
 app.use('/api/user', userApi);
 app.use('/api/product', productApi);
+app.use('/api/superchicken',superchickenApi);
 
 
 // 监听端口
